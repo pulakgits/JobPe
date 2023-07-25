@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/appToolBar"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/spTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Movie Is Waiting for You, Login Quickly"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/eTEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_txt_bg"
+        android:padding="12dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Email Address"
+        android:textColorHint="@color/white"
+        android:drawableLeft="@drawable/email_icon"
+        android:drawablePadding="15dp"
+        android:layout_below="@id/spTxt"
+        android:textColor="@color/white"
+        android:layout_marginTop="15dp"/>
+    <EditText
+        android:id="@+id/eTPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_txt_bg"
+        android:padding="12dp"
+        android:layout_marginBottom="10dp"
+        android:hint="password"
+        android:textColorHint="@color/white"
+        android:drawableLeft="@drawable/password_icon"
+        android:drawablePadding="15dp"
+        android:layout_below="@+id/eTEmail"
+        android:inputType="textPassword"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:id="@+id/alreadyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eTPassword"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/alreadyAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't havae an account ?"
+            android:textSize="13dp"
+            android:textColor="@color/white"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/SignUpPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SignUp"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:layout_toRightOf="@+id/alreadyAccount" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LoginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alreadyLayout"
+        tools:ignore="NotSibling"
+        android:background="@drawable/btn"
+        android:padding="12dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:fontFamily="@font/montserrat_medium"/>
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

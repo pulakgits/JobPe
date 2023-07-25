@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "533187386209",
+    "project_id": "jobpe-439ee",
+    "storage_bucket": "jobpe-439ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533187386209:android:9004812a57de3e9b9dc320",
+        "android_client_info": {
+          "package_name": "com.codingburn.jobpe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533187386209-fqetr4fgh1eqkh2if7b5e1esbm83jqhc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codingburn.jobpe",
+            "certificate_hash": "e084af79ee35b79fe299a13f70751048a0fc2a63"
+          }
+        },
+        {
+          "client_id": "533187386209-i8rkdkpn77on38g8uh8qd43h9upj120s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtMQuJrfi_rm3J_HAyyHYVevowK90mWQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533187386209-i8rkdkpn77on38g8uh8qd43h9upj120s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

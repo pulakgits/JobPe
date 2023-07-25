@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeTabUi.JobDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/appToolBar">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_icon"/>
+
+        <TextView
+            android:id="@+id/jobHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Job Headline"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="3dp"
+            android:textStyle="bold"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@+id/applyNow">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/orgLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Organization"
+                    android:textSize="22dp"
+                    android:background="@drawable/text_background"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/companyLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/companyImage"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orgLayout"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About Company"
+                    android:textSize="22dp"
+                    android:background="@drawable/text_background"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="15dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+                        <TextView
+                            android:id="@+id/aboutCompany"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textIsSelectable="true"
+                            android:textSize="16dp"
+                            android:text="hi"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orgLayout"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/companyTableHeadline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textIsSelectable="true"
+                    android:text="Tesco Recruitment Drive 2023"
+                    android:textSize="22dp"
+                    android:background="@drawable/text_background"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="15dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:stretchColumns="1">
+
+                            <TableRow>
+                                <TextView
+                                    android:text="Company Name"
+                                    android:textStyle="bold"
+                                    android:padding="10dp"
+                                    android:textSize="15dp"/>
+
+                                <TextView
+                                    android:id="@+id/companyName"
+                                    android:padding="10dp"
+                                    android:text="Tisco"
+                                    android:textSize="15dp"/>
+                            </TableRow>
+
+                            <TableRow>
+                                <TextView
+                                    android:text="Post Name"
+                                    android:textStyle="bold"
+                                    android:padding="10dp"
+                                    android:textSize="15dp"/>
+
+                                <TextView
+                                    android:id="@+id/postName"
+                                    android:padding="10dp"
+                                    android:text="Technical Support Associate"
+                                    android:textSize="15dp"/>
+                            </TableRow>
+
+                            <TableRow>
+                                <TextView
+                                    android:text="Salary"
+                                    android:textStyle="bold"
+                                    android:padding="10dp"
+                                    android:textSize="15dp"/>
+
+                                <TextView
+                                    android:id="@+id/salary"
+                                    android:padding="10dp"
+                                    android:text="up to ₹6 LPA* "
+                                    android:textSize="15dp"/>
+                            </TableRow>
+
+                            <TableRow>
+                                <TextView
+                                    android:text="Experience"
+                                    android:textStyle="bold"
+                                    android:padding="10dp"
+                                    android:textSize="15dp"/>
+
+                                <TextView
+                                    android:id="@+id/experience"
+                                    android:padding="10dp"
+                                    android:text="Fresher/Experienced"
+                                    android:textSize="15dp"/>
+                            </TableRow>
+
+                            <TableRow>
+                                <TextView
+                                    android:text="Job Location"
+                                    android:textStyle="bold"
+                                    android:padding="10dp"
+                                    android:textSize="15dp"/>
+
+                                <TextView
+                                    android:id="@+id/jobLocation"
+                                    android:padding="10dp"
+                                    android:text="Bengaluru"
+                                    android:textSize="15dp"/>
+                            </TableRow>
+
+                            <TableRow>
+                                <TextView
+                                    android:text="Batch"
+                                    android:textStyle="bold"
+                                    android:padding="10dp"
+                                    android:textSize="15dp"/>
+
+                                <TextView
+                                    android:id="@+id/batch"
+                                    android:padding="10dp"
+                                    android:text=" "
+                                    android:textSize="15dp"/>
+                            </TableRow>
+
+                            <TableRow>
+                                <TextView
+                                    android:text="Website"
+                                    android:textStyle="bold"
+                                    android:padding="10dp"
+                                    android:textSize="15dp"/>
+
+                                <TextView
+                                    android:id="@+id/companyWebsite"
+                                    android:padding="10dp"
+                                    android:text="www.tesco.com"
+                                    android:textSize="15dp"/>
+                            </TableRow>
+
+                            <TableRow>
+                                <TextView
+                                    android:text="Last Date"
+                                    android:textStyle="bold"
+                                    android:padding="10dp"
+                                    android:textSize="15dp"/>
+
+                                <TextView
+                                    android:id="@+id/lastDate"
+                                    android:padding="10dp"
+                                    android:text="ASAP"
+                                    android:textSize="15dp"/>
+                            </TableRow>
+
+                        </TableLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orgLayout"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Qualification required:"
+                    android:textSize="22dp"
+                    android:background="@drawable/text_background"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="15dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/qualifyRequired"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orgLayout"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Preferred skill:"
+                    android:textSize="22dp"
+                    android:background="@drawable/text_background"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="15dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/skill"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orgLayout"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Selection Process:"
+                    android:textSize="22dp"
+                    android:background="@drawable/text_background"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="15dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:id="@+id/selectionProcess"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:text="1) Application Screening \n 2) Online Assessment\n
+3) Technical Interviews\n
+4) HR Interview\n
+5) Final Selection\n"/>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orgLayout"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How to Apply in 2023 ?"
+                    android:textSize="22dp"
+                    android:background="@drawable/text_background"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:cardCornerRadius="15dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Apply Procedure :- "
+                            android:textColor="@color/appToolBar"
+                            android:textStyle="bold"
+                            android:textSize="17dp"/>
+
+                        <TextView
+                            android:id="@+id/applyProcess"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/applyNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Apply Now" />
+
+</RelativeLayout>

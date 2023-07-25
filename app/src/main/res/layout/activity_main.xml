@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+   <androidx.appcompat.widget.Toolbar
+       android:id="@+id/toolbar"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:elevation="10dp"
+       android:background="@color/appToolBar">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_gravity="center"
+           android:layout_marginRight="15dp">
+
+
+
+           <TextView
+               android:id="@+id/userName"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text=""
+               android:textSize="25dp"
+               android:textColor="@color/white"
+               android:textStyle="bold" />
+           <ImageView
+               android:id="@+id/Logout"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/logout_icon"
+               android:layout_alignParentRight="true" />
+
+       </RelativeLayout>
+   </androidx.appcompat.widget.Toolbar>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@+id/bnView"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bnView"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        app:menu="@menu/bnview_items"
+        app:itemIconSize="28dp"
+        android:elevation="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"/>
+
+</RelativeLayout>
